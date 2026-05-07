@@ -1,0 +1,13 @@
+- name: 获取用户
+  url: /users/1
+  method: GET
+  status: 200
+
+- name: 创建帖子
+  url: /posts
+  method: POST
+  json:
+    title: test
+    body: test
+    userId: 1
+  status: 201
